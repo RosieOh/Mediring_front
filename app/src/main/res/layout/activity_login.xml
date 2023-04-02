@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textColor="#248ED0"
+                    android:textStyle="bold"
+                    android:textSize="35dp"
+                    android:text="MEDIRING"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/login_id_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/edittext_round"
+                    android:hint="아이디"/>
+
+                <EditText
+                    android:id="@+id/login_pw_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/edittext_round"
+                    android:hint="비밀번호"/>
+
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#37BBCA"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="로그인"></Button>
+
+                <TextView
+                    android:id="@+id/signup_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:textSize="15dp"
+                    android:text="회원가입"></TextView>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+            <Button
+                android:id="@+id/kakao_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/kakao_start_button"/>
+            <Button
+                android:id="@+id/naver_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/naver_start_button"/>
+            <Button
+                android:id="@+id/google_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/google_start_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
